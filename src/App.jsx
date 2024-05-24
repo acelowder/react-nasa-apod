@@ -2,7 +2,7 @@ export default function App() {
   return (
     <>
       <main>
-        <img src="spiralgalaxy.jpg" />
+        <img src="spiralgalaxy.jpg" className="bg-image"/>
       </main>
       <div>
         <h2>Spiral Galaxy</h2>
