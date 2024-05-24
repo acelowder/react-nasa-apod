@@ -31,7 +31,31 @@ footer {
 .bg-gradient {
   position: absolute;
   bottom: 0;
-  height: 50%;
   width: 100%;
-  background: linear-gradient(to top, black, #ffffff00);
+  height: 40%;
+  min-height: 240px;
+  background: linear-gradient(to top, black, #00000095, #00000000);
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background-color: #00000080;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal {
+  width: 90%;
+  max-width: 400px;
+  height: 100%;
+  margin-left: auto;
+  background-color: #000000;
+  padding: 1rem 2rem;
+  overflow-y: scroll;
 }
