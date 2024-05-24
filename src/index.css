@@ -5,13 +5,17 @@
   background-color: black;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -29,5 +33,5 @@ footer {
   bottom: 0;
   height: 50%;
   width: 100%;
-  background: linear-gradient(to top, black, #FFFFFF00);
+  background: linear-gradient(to top, black, #ffffff00);
 }
