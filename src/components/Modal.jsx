@@ -1,3 +1,4 @@
+import { FaCircleXmark } from "react-icons/fa6";
 import "./Modal.css";
 
 export function Modal({ onClose }) {
@@ -6,7 +7,9 @@ export function Modal({ onClose }) {
       <div className="modal">
         <div className="modal-header">
           <h2>Spiral Galaxy</h2>
-          <button onClick={onClose}>Close</button>
+          <button onClick={onClose}>
+            <FaCircleXmark />
+          </button>
         </div>
         <p>Description</p>
         <p>
