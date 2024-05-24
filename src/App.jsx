@@ -3,6 +3,7 @@ export default function App() {
     <>
       <main>
         <img src="spiralgalaxy.jpg" className="bg-image"/>
+        <div className="bg-gradient"></div>
       </main>
       <div>
         <h2>Spiral Galaxy</h2>
