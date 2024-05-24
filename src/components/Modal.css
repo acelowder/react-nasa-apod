@@ -1,0 +1,22 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background-color: #00000080;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal {
+  width: 90%;
+  max-width: 400px;
+  height: 100%;
+  margin-left: auto;
+  background-color: #000000;
+  padding: 1rem 2rem;
+  overflow-y: scroll;
+}
