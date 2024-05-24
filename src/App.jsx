@@ -8,14 +8,16 @@ export default function App() {
   return (
     <>
       <main>
-        <img src="spiralgalaxy.jpg" className="bg-image" />
-        <div className="bg-gradient"></div>
+        <div className="hero">
+          <img src="spiralgalaxy.jpg" className="bg-image" />
+          <div className="bg-gradient"></div>
+        </div>
+        {showModal && <Modal onClose={() => setShowModal(false)} />}
       </main>
-      {showModal && <Modal onClose={() => setShowModal(false)} />}
       <footer>
         <div>
-          <h2>Spiral Galaxy</h2>
-          <h1>APOD Project</h1>
+          <h1>Spiral Galaxy</h1>
+          <p className="subtitle">ASTRONOMY PICTURE OF THE DAY</p>
         </div>
         <button onClick={() => setShowModal(true)}>
           <FaCircleInfo />
