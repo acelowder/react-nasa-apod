@@ -1,20 +1,21 @@
-import { useState } from "react";
-import { useFetchNasaData } from "./hooks/useFetchNasaData";
-import { Hero } from "./components/Hero";
+import { useState, createContext } from "react";
+import { NASAProvider } from "./contexts/useNASAContext";
+import { Background } from "./components/Background";
 import { Modal } from "./components/Modal";
 import { Footer } from "./components/Footer";
 
+const NASAContext = createContext();
+
 export default function App() {
   const [showModal, setShowModal] = useState(true);
-  const data = useFetchNasaData();
 
   return (
-    <>
+    <NASAProvider>
       <main>
-        <Hero />
+        <Background />
         {showModal && <Modal onClose={() => setShowModal(false)} />}
       </main>
       <Footer handleInfoClick={() => setShowModal(true)} />
-    </>
+    </NASAProvider>
   );
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function useFetchNasaData() {
+export function useFetchAPOD() {
   const [data, setData] = useState(null);
 
   useEffect(() => {

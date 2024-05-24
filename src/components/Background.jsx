@@ -1,6 +1,6 @@
-import "./Hero.css";
+import "./Background.css";
 
-export function Hero({}) {
+export function Background({}) {
   return (
     <div className="hero">
       <img src="spiralgalaxy.jpg" className="bg-image" />
