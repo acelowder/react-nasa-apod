@@ -2,7 +2,7 @@ import "./Modal.css";
 
 export function Modal({ onClose }) {
   return (
-    <div className="modal-overlay">
+    <>
       <div className="modal">
         <div className="modal-header">
           <h2>Spiral Galaxy</h2>
@@ -23,6 +23,7 @@ export function Modal({ onClose }) {
           Aspernatur placeat veniam atque?
         </p>
       </div>
-    </div>
+      <div className="modal-overlay" onClick={onClose} />
+    </>
   );
 }
