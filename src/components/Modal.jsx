@@ -9,13 +9,15 @@ export function Modal({ onClose }) {
     <>
       <div className="modal">
         <div className="modal-header">
-          <h2>Description</h2>
+          <h3>Description</h3>
           <button onClick={onClose}>
             <FaCircleXmark />
           </button>
         </div>
-        <p>{data?.explanation}</p>
-        <p>{data?.date}</p>
+        <p className="modal-date">{data?.date}</p>
+        <div className="modal-content">
+          <p>{data?.explanation}</p>
+        </div>
       </div>
       <div className="modal-overlay" onClick={onClose} />
     </>

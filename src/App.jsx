@@ -7,7 +7,7 @@ import { Footer } from "./components/Footer";
 const NASAContext = createContext();
 
 export default function App() {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <NASAProvider>

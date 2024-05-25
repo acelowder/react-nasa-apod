@@ -1,12 +1,14 @@
 .modal {
+  display: flex;
+  flex-direction: column;
   z-index: 2;
   position: absolute;
   width: 400px;
   height: 100vh;
   right: 0;
-  background-color: #000000;
-  padding: 1rem 2rem;
+  background-color: var(--background-color);
   overflow-y: scroll;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.7);
 }
 
 .modal-overlay {
@@ -19,8 +21,35 @@
 
 .modal-header {
   display: flex;
+  padding: 0.8rem 1rem 0.4rem 1rem;
+  margin-top: 1.4rem;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--panel-color);
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header h3 {
+  margin: 0;
+  padding-bottom: 6px;
+  font-weight: 800;
+}
+
+.modal-header button {
+  font-size: 28px;
+}
+
+.modal-content {
+  height: 100%;
+  padding: 0rem 1rem;
+  overflow-y: scroll;
+}
+
+.modal-date {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  margin: 1.5rem auto 0 1rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
