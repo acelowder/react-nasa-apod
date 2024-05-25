@@ -69,6 +69,16 @@ footer {
   footer button {
     translate: -4px 8px;
   }
+
+  h1 {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+
+  .subtitle {
+    white-space: normal;
+    text-wrap: pretty;
+  }
 }
 
 main {
