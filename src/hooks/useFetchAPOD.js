@@ -23,6 +23,7 @@ export function useFetchAPOD() {
       const url = `https://api.nasa.gov/planetary/apod?api_key=${apikey}`;
       const response = await fetch(url);
       const apiData = await response.json();
+      if (apiData.error) throw new Error(apiData.error.code);
       return apiData;
     };
 
