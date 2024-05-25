@@ -16,7 +16,7 @@ export function Modal({ onClose, visible }) {
         </div>
         <p className="modal-date">{data?.date}</p>
         <div className="modal-content">
-          <p>{data?.explanation}</p>
+          <p>{data ? data.explanation : "Loading..."}</p>
         </div>
       </div>
       <div

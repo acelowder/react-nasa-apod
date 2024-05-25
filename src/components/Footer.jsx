@@ -8,7 +8,7 @@ export function Footer({ handleInfoClick }) {
     <footer>
       <div className="footer-content">
         <p className="subtitle">ASTRONOMY PICTURE OF THE DAY</p>
-        <h1>{data?.title}</h1>
+        <h1>{data ? data.title : "Loading..."}</h1>
       </div>
       <button onClick={handleInfoClick}>
         <FaCircleInfo />
