@@ -13,7 +13,7 @@ export default function App() {
     <NASAProvider>
       <main>
         <Background />
-        {showModal && <Modal onClose={() => setShowModal(false)} />}
+        <Modal onClose={() => setShowModal(false)} visible={showModal} />
       </main>
       <Footer handleInfoClick={() => setShowModal(true)} />
     </NASAProvider>

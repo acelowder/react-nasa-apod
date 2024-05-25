@@ -2,12 +2,12 @@ import { useNASAContext } from "../contexts/useNASAContext";
 import { FaCircleXmark } from "react-icons/fa6";
 import "./Modal.css";
 
-export function Modal({ onClose }) {
+export function Modal({ onClose, visible }) {
   const { data } = useNASAContext();
 
   return (
     <>
-      <div className="modal">
+      <div className={`modal ${visible ? "slide-in" : ""}`}>
         <div className="modal-header">
           <h3>Description</h3>
           <button onClick={onClose}>
@@ -19,7 +19,10 @@ export function Modal({ onClose }) {
           <p>{data?.explanation}</p>
         </div>
       </div>
-      <div className="modal-overlay" onClick={onClose} />
+      <div
+        className={`modal-overlay ${visible ? "fade-in" : ""}`}
+        onClick={onClose}
+      />
     </>
   );
 }

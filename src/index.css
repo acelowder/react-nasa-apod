@@ -59,8 +59,21 @@ footer {
   padding: 2rem 3rem 2rem 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 0px;
+  }
+
+  footer button {
+    translate: -4px 8px;
+  }
+}
+
 main {
   display: flex;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
