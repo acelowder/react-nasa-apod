@@ -53,13 +53,17 @@
 
 .modal-content {
   height: 100%;
-  padding: 0rem 1rem;
+  padding: 0 1rem;
   overflow-y: scroll;
+}
+
+.modal-content p {
+  margin: 0 0 2rem 0;
 }
 
 .modal-date {
   color: var(--primary-color);
   font-size: 0.9rem;
-  margin: 1.5rem auto 0 1rem;
+  margin: 1.5rem auto 1rem 1rem;
   font-weight: 600;
 }
